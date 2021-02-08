@@ -1,0 +1,58 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    02/26/2019  16:51:00  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\jidianqi.obj TO .\Objects\jidianqi PRINT (.\Listings\jidianqi.m51) RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\jidianqi.obj (JIDIANQI)
+
+
+LINK MAP OF MODULE:  .\Objects\jidianqi (JIDIANQI)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     011FH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\jidianqi (JIDIANQI)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        JIDIANQI
+  C:0110H         SYMBOL        DEL0
+  C:0112H         SYMBOL        DEL1
+  C:0114H         SYMBOL        DEL2
+  C:010EH         SYMBOL        DELAY
+  C:0100H         SYMBOL        MAIN
+  D:0090H         SYMBOL        P1
+  C:0000H         LINE#         2
+  C:0100H         LINE#         11
+  C:0102H         LINE#         12
+  C:0104H         LINE#         13
+  C:0106H         LINE#         14
+  C:0108H         LINE#         15
+  C:010AH         LINE#         16
+  C:010CH         LINE#         19
+  C:010EH         LINE#         21
+  C:0110H         LINE#         22
+  C:0112H         LINE#         23
+  C:0114H         LINE#         24
+  C:0116H         LINE#         25
+  C:0118H         LINE#         26
+  C:011AH         LINE#         27
+  C:011CH         LINE#         28
+  C:011EH         LINE#         29
+  -------         ENDMOD        JIDIANQI
+
+Program Size: data=8.0 xdata=0 code=287
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,61 @@
+A51 MACRO ASSEMBLER  JIDIANQI                                                             02/26/2019 16:51:00 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\jidianqi.obj
+ASSEMBLER INVOKED BY: D:\Keil_v5\C51\BIN\A51.EXE jidianqi.asm SET(SMALL) DEBUG PRINT(.\Listings\jidianqi.lst) OBJECT(.\O
+                      bjects\jidianqi.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1                     ORG 0000H
+0000 2100              2                     AJMP MAIN
+0100                   3                     ORG 0100H
+                       4                             
+                       5     ;MAIN:  MOV A,#01H
+                       6     ;LOOP:  MOV P1.0,A
+                       7                     ;ACALL DELAY
+                       8                     ;RL A
+                       9                     ;AJMP LOOP
+                      10                     
+0100 C290             11     MAIN:   CLR P1.0
+0102 310E             12                     ACALL DELAY
+0104 310E             13                     ACALL DELAY
+0106 310E             14                     ACALL DELAY             
+0108 D290             15                     SETB P1.0
+010A 310E             16                     ACALL DELAY
+                      17                     
+                      18                     
+010C 80F2             19                     SJMP MAIN
+                      20                     
+010E 7F64             21     DELAY:  MOV R7,#100
+0110 7E0A             22     DEL0:   MOV R6,#10
+0112 7D0A             23     DEL1:   MOV R5,#10
+0114 7C0A             24     DEL2:   MOV R4,#10
+0116 DCFE             25                     DJNZ R4,$
+0118 DDFA             26                     DJNZ R5,DEL2
+011A DEF6             27                     DJNZ R6,DEL1
+011C DFF2             28                     DJNZ R7,DEL0
+011E 22               29                     RET
+                      30                     
+                      31                     END
+A51 MACRO ASSEMBLER  JIDIANQI                                                             02/26/2019 16:51:00 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DEL0 . . . . . . .  C ADDR   0110H   A   
+DEL1 . . . . . . .  C ADDR   0112H   A   
+DEL2 . . . . . . .  C ADDR   0114H   A   
+DELAY. . . . . . .  C ADDR   010EH   A   
+MAIN . . . . . . .  C ADDR   0100H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

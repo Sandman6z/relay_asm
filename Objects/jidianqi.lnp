@@ -1,0 +1,3 @@
+".\Objects\jidianqi.obj" 
+TO ".\Objects\jidianqi" 
+PRINT(".\Listings\jidianqi.m51") RAMSIZE(256) 
